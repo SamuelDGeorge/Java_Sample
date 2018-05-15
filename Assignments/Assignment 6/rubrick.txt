@@ -1,0 +1,65 @@
+Assignment 6
+
+Scene Part (30 pts)
+
+(10) Add gorge and bridge in the scene - there is a gorge in the scene.
+
+(10) Add standing areas for knights and guard, and tag the getters as 'KnightArea' and 'GuardArea' respectively - Standing Area’s are present and tagged. Guard on right, knight on left.
+
+(5) The guard area should be in the right side, and knight area is in the left side - again guard on right, knight on left. 
+
+(5) Initialize the guard in the guard area, and no knights in the knight area at the beginning - No knights in Area at the beginning. 
+
+New Methods (50 pts)
+
+(10) Implement approach method with help of 'occupied' property, and tag this method as 'say'
+one parameter
+move avatar to knight stand area if not occupied, otherwise do nothing, and tag this method 'approach'
+
+-Tagged properly. Method puts the avatar in standing area if it is unoccupied. Otherwise, does nothing. 
+
+(10) Implemnt say method with help of 'knightTurn' property, and tag this method as 'say'
+sets text
+Only works when the knight stand area is occupied, otherwise do nothing
+The guard always gets to speak first
+Correctly alternates between guard and knight
+
+-Tagged properly. Say has the guard speak first. Whenever someone approaches. KnightTurn is set to false and say begins with the guard. 
+
+(15) Implement passed method, tag it as 'passed'
+No parameter
+Only works when the knight stand area is occupied
+The knight can pass only when its guard's turn to speak
+Passed avatar moves to the right side of the bridge
+if a knight passed, make the knight stand area unoccupied
+
+-When a Knight passes, the area becomes unoccupied. Method has all the proper functionality. Avatar moves to the right side of the bridge. Note: The animation for walking is done by the code. The pass just changes occupied to false and the animation walks him away. Will perform move properly later. 
+
+(15) Implement fail method, and tag it as 'failed'
+No parameter
+Only works when both standing areas are occupied
+Decide the correct avartar to fail
+Failed avatar (knight) should be moved into the gorge
+If the knight fails, then the knight stand area becomes unoccupied
+
+-Works as supposed to. Falls the proper person based on speech. 
+
+Tokens re-implementation (10 pts)
+
+(5) Remove code repetition in both classes and interfaces through inheritance - code was all done with proper inheritance. No multiple implementations and no repeat code. 
+
+(5) Tokens refactored to implement exactly one interface each - All tokens only have one interface. 
+
+Approach Command
+
+(10) Create a command token class for 'approach', and modify your scanner to recognize this command, also remember to tag this class for 'approach'
+
+-Approach has been added to the list of commands and that class was tagged as “approach”. 
+
+Extra Credit
+
+(5) Implement a method to scroll the scene left,right,up and down; tag this method 'scroll' - You can use the scroll method to move the entire scene around. 
+
+(5) Create a class to clear history strings, and tag this class 'ClearableHistory', and tag the clear method as 'clear', use the LIST_PATTERN for this class - Class now has a history that shows all the tokens, not just the ones that are in array. Is clearable. 
+
+(5) Aniamtions: approach, pass, fail - Proper animations for each scenario. 

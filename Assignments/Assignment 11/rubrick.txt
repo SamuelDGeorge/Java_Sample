@@ -1,0 +1,56 @@
+Assignment 11
+New Commands (30 pts)
+
+(5) Pass and Fail tokens, tag as 'pass' and 'fail' respectively - pass and fail tokens added to program. Labeled properly.
+
+(9) Pass, Fail, and Approach command objects, tag as 'PassCommand', 'FailCommand' and 
+'ApproachCommand' - Command objects created labeled ‘PassCommand’, ‘FailCommand’, and ‘ApproachCommand’ respectively. 
+
+(8) Command List Command
+has an instance of List or Vector that holds commands (Runnables)
+run() runs all stored commands in order
+Tag as 'CommandList') - Labeled Command List. This stores a list of Runnable items and when its run is called. It runs all of them. 
+
+(8) Repeat Command
+run() repeats some command n times
+tagged 'Repeat' - RepeatCommand is tagged ‘Repeat’ and Runs the command that it is passed a certain number of times. 
+
+Basic Recursive Descent Parsing (60 pts)
+
+(8) create a class, tag as 'Parser', has a read-only string property called 'CommandText', a read-only property called Errors, also should have getter for the parsing results - Has a setter for the property CommandText and a getter that returns Errors as a string and also a getter labeled CommandObject that returns Runnable.
+
+(32) Separate parsing methods for all 8 nonterminals: Command, Say Command, Move Command, Approach Command, Pass Command, Fail Command, Command list, Repeat Command, and tag them as 'parseCommand', 'parseSay', 'parseMove', 'parseApproach', 'parsePass', 'parseFail', 'parseCommandList' and 'parseRepeat', respectively - parser has a parse method for each of the non-terminals and they are tagged appropriately. 
+
+(10) Parser can (recursively) parse Command List commands - Parser recursively calls parseCommand() inside of parseCommandList() in order to get the list of commands that should go inside of the list. Also works with nested commands lists as well.
+
+(10) Parser can (recursively) parse Repeat commands - Parser also recursively calls the parseCommand() method in order to get the command that must be repeated. 
+
+Synchronized Animations of Same Avatar (10 pts)
+
+(10) Synchronized avatar methods - The animator for each avatar has the synchronized keyword so that only one animation at a time can run on each avatar. However, since there is a different animator for each avatar. Two avatars can move simultaneously. 
+
+Animating Demoing Main Class
+
+write a main class that creates a scene object displays animations of it using the console scene view and the painting view, and displays the command interpreter user interface. - Main class shows all the things listed in the assignment including:
+1. Shows the scene in own window and object editor.
+2. Shows animation both synchronous (same avatar) and asynchronous (two different avatars)
+3. Displays Command Interpreter with object editor.
+4. Sets various commands to show parser working properly. 
+
+Extra Credit:
+
+(5) Signed Number Parsing - parser can do move with + and - signs for both move and rotateArm commands. 
+
+(10) More Recursive Descent Parsing - All parsing is recursive and all the commands including rotateLeft/RightArm, Sleep, Define, Call, and Thread are recognized and parsed using appropriate parsing methods. This is demonstrated by the clapping section of the demo. 
+
+Penalty
+
+(-5) Not uploading the project in a zipped folder with bin and src folders - file is zipped including both bin and src. 
+
+(-5) Not having a main package having a main class called Assignment6 - main package has in it Assignment11. 
+
+(-5) Any public method is not in the interface - All public methods are in an interface. 
+
+(-5) Use the System.exit() - not used
+
+(-5) Main method not public - Main method is public. 

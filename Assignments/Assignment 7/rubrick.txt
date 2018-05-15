@@ -1,0 +1,63 @@
+Assignment 7
+
+Refactoring Shape Classes (30 pts)
+
+(10) Locatable Class and Interface
+Create a class and interface for x and y properties and tag the class as 'Locatable'
+Refactor the shape classes/interfaces to extend this class and interface as necessary (if they has x and y properties)) - Locator interface and BasicLocator class are tagged as ‘Locatable’ and all shapes with x and y properties extend from it. 
+
+(15) Bounded Shape Class and Interface
+Create a class and interface for x, y, height, and width and tag the class as 'BoundedShape'
+Refactor other shape classes/interfaces to extend this class and interface as necessary (if they has x,y, height and widht properties)
+BoundedShape class and interface should inheritate the Locatable class and interface respectively - interface Shape and class Basic Shape have height and width properties that are not editable and are used to create all the other shapes used. Both are tagged as ‘BoundedShape’. 
+
+(5) Correctly list the inherited properties as well as the properties implemented in that subclass for the PropertyNames and EditablePropertyNames annotations - properties are listed and give all the properties, even ones inherited from a previous iteration. ObjectEditor has no problems with any shape class. 
+
+Table (35 pts)
+
+(5) Implement a Table class and interface, and tag them as 'Table' - Table interface and basic table class. Both are tagged ‘Table’.
+
+(15) put method
+associates new value with key if key already exists
+adds key-value pair if key does not already exist
+does nothing if either key or value is null
+demoed in main class - If key exists, replaces with new object. If key does not exist, it adds it. If either key or value is null, does nothing. Demoed in main.
+
+(15) get method
+returns the value associated with key
+returns null if no value is associated with key
+demoed in main class - returns object associated with key. Returns null if no object is found associated with the key. Demoed in main. 
+
+Command Interpreter (35 pts)
+
+(5) Create a new class for command interpreter, and tag as 'CommandInterpreter' - new class BasicCommandInterpreter exists and is tagged ‘CommandInterpreter’. 
+
+(5) editable property for command - Command is an editable property that takes a string. 
+
+(25) command interpretation
+scans command for tokens
+correctly identifies 'move' and 'say' commands
+invokes 'move' or 'say' method in scene class with the provided argument
+demoed in main class - recognizes commands and deals with them appropriately - demoed in main class. 
+
+Extra Credit
+
+(8) Move command detects signs and tag as 'SignedMove' - Can recognize +/- in the move command and is tagged as SignedMove.
+
+(7) Interpreter detects errors and tagged as 'ErrorResilient' - Recognizes errors and interpreter is tagged as ‘ErrorResilient’. In general, no string will cause the commander to crash and it will report errors based on usage. 
+
+Penalty
+
+(-5) Not uploading the project in a zipped folder with bin and src folders - zipped properly
+
+(-5) Not having a main package having a main class called Assignment6 - Assignment7 is in main package.
+
+(-5) Any public method is not in the interface - all public methods in interfaces. 
+
+(-5) Use the System.exit() - this is never used. 
+
+(-5) Main method not public - main method is public.
+
+(-10) Use a Java implementation of table - made my own table. 
+
+(-10) Magic Numbers appear in your program - check style finds no magic numbers. 

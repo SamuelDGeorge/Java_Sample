@@ -1,0 +1,41 @@
+Functionality
+
+•	(20 points) Implement the Bean class correctly - ScannerBean contains a getter and a setter for scannedString. When the setter is called, it sets the scanned string and also prints the outputs. 
+
+•	(20 points) Recognize and print numbers and words correctly  -  A group of digits gets identified as a number and a word as a word.
+
+•	(30 points) Recognize and print quoted string correctly - A closed quote string is identified and takes the whole of what is inside. For example “Hello      my name is Sam” is recognized as a whole quoted string. Space is preserved. 
+
+Testing
+
+•	(5 points) Screen shot of demonstration of ``step over'' in debug mode  - A screenshot shows stepping over IE moving method call to method call. 
+
+•	(5 points) Screen shot of demonstration of ``step into'' in debug mode   - A screenshot shows step into where a method is specifically examined. .charAt() was used to easily show stepping into the String class and .charAt() method.
+
+•	(5 points) Screen shot of demonstration of ``step return'' in debug mode  -  A screenshot shows going into a method and back out again while still staying on that method. 
+
+•	(5 points) Screen shot of demonstration of ``setting breakpoints'' in debug mode   -  A screenshot shows the program stopping at a breakpoint and variables are manipulated at that breakpoint to change the output. 
+
+•	(10 points) Screen shot of program contains for various inputs  - A screenshot shows all functional cases being handled correctly. 
+
+Extra Credit
+
+•	(3 points) Allow an arbitrary number of spaces before and after each token  -  A token can have as many spaces as it would like, the scanner ignores these when collecting tokens unless it is in a quote. 
+
+•	(3 points) Give an error message if the closing double quote is missing  -  A “quoted string E: Missing end quote:” Is given for quotes that do not have a corresponding end quote. 
+
+•	(3 points) Write your own method for determining if a character is a letter  -  ScannerBean.isLetter(char inputChar) determines if a character is a letter. This is used in the program in place of Character class method for checking letters (See screenshot for method). Note: For the purposes of this assignment ‘ as in It’s or Bob’s was not considered a letter. Adding an or char == ‘\’’ would allow the method to identify that as a letter as well.  
+
+•	(4 points) Look also for and print the plus token and the minus token - Plus(+) or Minus(-) with space around it will be seen as a sign and identified as such. 
+
+Penalty (- no points)
+
+	(-20 points) Illegal library import or import using * (e.g. StringTokenizer or "import java.io.*;") - There are no illegal imports.
+
+(-25 points) Illegal Method Call (i.e. split() ) - there are no illegal method calls.
+
+(-10 points) Not having a "main" package having a main class called "Assignment2". - There is a main package with a main class called “Assignment2”
+
+(-10 points) Not having tags. - The necessary tags for the grader are present in the bean class. 
+
+(-10 points) Not uploading the project with bin and src folders. - Zip file contains both the bin and src folders. 

@@ -1,0 +1,55 @@
+Assignment 10
+
+Precondition Methods and Extended Console View(30 pts)
+
+(12) Public precondition method for each method: approach, say, passed, and failed, and use assert the precondition methods in these there methods - There are precondition methods for approach, say, passed, and failed. All are preM named.
+
+(12) Notify all observers of the scene class of the corresponding event when you change some value in the precondition methods - Notification of the specified type is sent when any of these preconditions are changed. 
+
+(6) Rigster Console Scene View as an observer of a scene class, thus, it can print Property Change Events from precondition methods - Console view prints scene property change events. These are formatted specifically to make them easy to pick out over changes in command objects. 
+
+Command Objects for Parsing(11 pts)
+
+(5) Create two new command class, tagged 'SayCommand' and 'MoveCommand' and implement Runnable - These two classes have been made. 
+
+(3) Move command only takes Avatar and two integers as arguments in its constructor - The moveCommand takes an avatar and two integers. 
+
+(3) Say command only takes a String and Scene as arguments in its constructor - sayCommand takes the scene and string of text.
+
+Command Interpreter with Command Objects(11 pts)
+
+(5) Creat Two separate parsing methods for say and move command that return Runnable-typed objects. Tagged 'parseSay' and 'parseMove' - Two methods in command interpreter have tags parseSay and parseMove. These methods return a Runnable. 
+
+(5) Caller of 'parseSay' and 'parseMove' executes command using the Runnable object - The caller of these methods execute the command by calling command.run();
+
+Asynchronous Animations (49 pts)
+
+(5) Animating methods in interpreter tagged 'asynchronousArthur', 'asynchronousGalahad', 'asynchronousLancelot' and 'asynchronousRobin'. - all four of these methods are tagged in the interpreter. 
+
+(10) Each method starts and runs the animation in its own thread. Animations must be demoed to run simultaneously to receive credit for this! - Each of these methods creates a Thread from a Runnable and starts them whenever the method is called. 
+
+(17) Animation uses one or more animating command classes that implement Runnable. Class(es) tagged 'AnimatingCommand' - Class tagged AnimatingCommand implements runnable and calls an Animator. 
+
+(17) Each animation uses some animator class with an animating method. Class(es) tagged 'Animator', and method(s) tagged 'animateAvatar' if for animate Avatars - The animator is tagged “Animator” and has methods tagged animateAvatar. 
+
+Demo
+
+Demo all of the features specified in the Assignment 10 pdf to get credit for them! - all features are demoed in the main class. 
+
+Extra Credit (15 pts)
+
+(10) Dynamically enabled buttons on interpreter for approach, say, passed, and failed - buttons are added to the command controller and they dynamically enable based on the preconditions. 
+
+(5) Clapping guard asynchronous animation, tagged 'asynchronousGuard' - The guard can also clap. This method is tagged asynchronousGuard in the command interpreter. 
+
+Penalty
+
+(-5) Not uploading the project in a zipped folder with bin and src folders - all files zipped including bin and src. 
+
+(-5) Not having a main package having a main class called Assignment6 - has a main package with a main class that calls Assignment10
+
+(-5) Any public method is not in the interface - all public methods are in an interface. 
+
+(-5) Use the System.exit() - don’t use System.exit();
+
+(-5) Main method not public - main method is public. 

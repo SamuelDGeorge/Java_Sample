@@ -1,0 +1,44 @@
+Assignment 12
+
+Coordinating Animation Starts (20 pts)
+
+(8) Add 4 waiting animation methods to the interpreter to animate Arthur, Galahad, lancelot, and Robin in separate threads, tag them as 'waitingArthur', 'waitingGalahad', 'waitingLancelot' and 'waitingRobin' respectively - all waiting methods defined. They wait for a proceedAll from the clearance manager to be called to start the animation. 
+
+(5) The waitForProceed method is made either by the command objects executed by the created threads - the waitForProceed is called in the command object before the animation begins. 
+
+(5) add another method to the command interpreter that calss proceedAll method of the BroadcastingClearanceManager. Tag this method as 'startAnimation' - startAnimation tagged method calls proceedAll() in the global clearance manager. 
+
+(2) Do not use clearance manager from ObjectEditor, instead, copy the code from JavaTeaching project. (Note we can not refrence from JavaTeaching directly, we have to copy code from JavaTeaching to your own project) - Have my own clearance manager that functions like the one in JavaTeaching. Code does not need external project. 
+
+Generics (10 pts)
+
+(10) Generic table class - The table class is generic and can define both a Key and Value type. For example <String, Avatar> makes a String Key and an Avatar value. 
+
+Extra Credit:
+
+(5) Lockstep Animation - Lockstep animation methods work. The command interpreter now calls a lockstep animator that is a subclass of an abstract class that defines a waitForProceed in between the animations for walking. While the clapping method calls proceed all. All classes are tagged appropriately. 
+
+(25) More Recursive Descent Parsing
+Interpreter handles commands from the extended grammar - all grammar is handled. This is demoed using a version of beats in the command interpreter. 
+
+(10)ObjectEditor Factory Class and Instance Factory Method - There is a factory class for altering the textfields in ObjectEditor. There is also a factory Class “SingletonsCreator” that gives out the same instance of the scanner, parser, command interpreter, ClearanceManager, and Avatar Table. All my classes now pass this around and use this factory instead of trying to pass a single instance around through constructors. 
+
+(25)Implement the extended grammar with define and call commands - The extended grammar can also use define and call to store and recall commands. A version of the beats sequence shows all of these. 
+
+(10) Define, throw, and catch 'ScanningException' and 'ParsingException' - The scanner and parser sub methods both throw these exceptions (which extend IOException) and the setCommandText() method in the parser catches these exceptions and culminates them into a single error which is set to the errors string of the parser class. 
+
+(5) Parser supports undo/redo + move method is undoable - Move, Command List, and rotateArm commands all support undo/redo. This is demoed in main assignment demo. 
+
+Penalty
+
+(-5) Not uploading the project in a zipped folder with bin and src folders - project is zipped with bin and src folder. 
+
+(-5) Not having a main package having a main class called Assignment6 - main class is in main package and called Assignment12 
+
+(-5) Any public method is not in the interface - all public methods are in an interface. 
+
+(-5) Use the System.exit() - not used. 
+
+(-5) Main method not public - main method is public. 
+
+(-20) Refrence clearance manager class from JavaTeaching directly (we have to copy code from JavaTeaching to your own project) - have my own clearance manager. Not referencing one in JavaTeaching. 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/home/SamuelGeorge/Dropbox/Dropbox/Post-Grad-UNC/Comp401/Object Editor/oeall22.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

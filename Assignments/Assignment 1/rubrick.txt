@@ -1,0 +1,30 @@
+Assignment 1 
+
+Functionality 
+
+(40 points) Process and print out the tokens the user entered - Program reports the tokens that the user entered. 
+(10 points) Compute correctly and print out the sum and product - The sum and product of the number string are printed and the math is correct.
+
+(10 points) Terminate when the line starts with '.' - Entering a period at the start of a line (with our without characters following it) terminates the program.
+
+Style 
+
+(20 points) Loop only once through the input string - The program makes use of a separate class to pull tokens out of the string. It only scans the string once. Note: If a token is found to be a non-number, for example in the string “1  2k;j;jul;3” the scanner separates this into “1” and “2k;j;jul;3”. That second token is scanned again in order to correct the error and extract the numbers from it. This separates it into “2” and “3” while ignoring the stuff in the middle. This means that the original string is only looped through once, but a token in error is scanned again. This is done to allow proper error reporting.
+ (10 points) The code contains at least two meaningful methods -All classes contain at least two meaningful methods. 
+
+(10 points) Include screenshots show test data output -The screenshot “Assignment 1- Functionality.jpg” shows all data input scenarios and appropriate output.
+
+Extra Credit 
+
+(5 points) Handle "invalid" characters -The program will accept any mix of characters and numbers and will separate out the numbers. Numbers with either characters or spaces between are separated into two numbers. (Example: 12 34 and 12.34 are both read as two numbers 12 and 34)
+ (10 points) Use an additional class for the parser. It must not use an array - The classes TokenScanner and DigitScanner are responsible for parsing the users input string. TokenScanner separates tokens based on only spaces, so the string “1    2k;klj;3   4jk;5” is scanned as “1” , “2k;klj3” , and “4jk;5”. Digit Scanner pulls numbers out of a string where separation by space or a character denotes a new number, so “1    2l;kj;j3 4j;ljl5” is read as “1”, “2”, “3”, “4”, “5”. Both of these classes implement the Iterator interface.
+ (5 points) Support variable number of spaces -When scanning, spaces are completely ignored. So “1              2” and “1 2” are both read as “1” then “2”. 
+ (10 points) Especially nice code (Extra meaningful methods, useful classes, good comments/documentation) -Comments were added where method names are not sufficient to explain function. Methods were named based on purpose and should have an understandable purpose without comments.
+
+Penalty 
+
+(-20 points) Illegal library import or import using * (e.g. StringTokenizer or "import java.io.*;") -Only external import was java.util.Scanner; Classes imported from my own package are all located in grail.scanner.
+
+(-25 points) Illegal Method Call (i.e. split() ) -CheckStyle finds no illegal methods. 
+
+(-10 points) Not having a main package having a main class called Assignment1. -main class is called Assignment1 and it is in the main package. Check style confirms this with a message. 

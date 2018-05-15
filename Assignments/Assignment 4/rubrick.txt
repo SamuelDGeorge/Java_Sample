@@ -1,0 +1,65 @@
+Assignment 4
+
+Part 1: Scanner Bean (30 points)
+
+(20 points) Correct output. Your program should show the correct output for a given input string - Program has the correct object editor output.
+
+(10 points) Correctly using Array to store the token objects. - Objects are stored in the interface StoreToken[] array.
+
+Part 1: Token Classes for commands (15 points) 
+
+(5 points) Every required command has its own class - Every command has it’s own class.
+
+(5 points) Every Token class follows the bean pattern - every token class follows the proper bean patter.
+
+(5 points) Every Token class for command has the same properties as Word - command inherits from word and has the same properties. 
+
+(15 points) Inheritance from the Word class (This is an alternative for the above 
+three rules) - There is a basic word class and command class. All the command classes inherit from the command class. 
+
+Part 2: Rotating line (30 points)
+
+(5 points) Line can change location - Line Changes location in object editor.
+
+(10 points) Line can rotate in place - line rotates in place
+
+(15 points) Line can rotate and move - line can be moved and rotate.
+
+Demo/Main method (15 points)
+
+(10 points) Scanner object displays properly in ObjectEditor and tests for every token type - The scanner shows properly in object editor and tests all the token types.
+
+(5 points) Line object rotates and moves in ObjectEditor window
+Interfaces (10 points) - Line object moves and rotates in the ObjectEditor window.
+
+(5 points) Every public method is included in an interface (for the tokens, the scanner and graphics classes) and the classes implement the appropriate interfaces. All public methods come from an interface.
+
+(5 points) Objects are assigned to interface-type variables only. - objects all assign to interface-type variables. 
+
+Extra Credit (15 points )
+
+(10 points) Errors are stored in their own read-only Scanner property - Errors are stored in a string[]. 
+
+(5 points) Fantastic code - tried to be as explicit as possible. 
+
+Potential Penalties
+
+(-20 points) Not uploading the project in a zipped folder with bin and src folders - zipped properly
+
+(-10 points) Not having a "main" package having a main class called "Assignment4" - check style finds the Assignment4 in main package.
+
+(-5 points) Using console input instead of editing in ObjectEditor Window - Only user ObjectEditor window. 
+
+(-8 points) Using Arraylist instead of creating arrays yourself - didn’t use ArrayList.
+
+(-5 points) Using Word object instead of specific new defined objects for commands (e.g. move, say...) - used command objects.
+
+(-3 points each) Not having the tags for your new token classes: move, say, rotateLeftArm, rotateRightArm, repeat, define, call, thread, wait, proceedAll, sleep, undo, redo - Checkstyle finds all the proper command classes. 
+
+(-5 points) Not having tags "RotatingLine" in your Rotate Line class - This tag is in the Rotating line class. 
+
+(-10 points) Having setters for height and width properties in Rotate Line Class - There is no setter for height and width, they are set by radius and angle. 
+
+(-10 points) Each class is not in its own file - all classes are public. 
+
+(-3 points each) Get warnings from ObjectEditor telling you of missing structure pattern annotations. - object editor shows no warnings except the specified allowed warning on refresh. 

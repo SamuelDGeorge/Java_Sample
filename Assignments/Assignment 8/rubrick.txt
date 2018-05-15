@@ -1,0 +1,41 @@
+Assignment 8
+
+Observable Bean Announcing PropertyChangeEvent (35 pts)
+
+(20) Each atomic shape class implements PropertyListenerRegisterer, no unnecessary duplication of notification code - all atomic classes implement PropertyListenerRegisterer (they explicitly say they do, but the code for implementing this interface is inherited in all cases) and there is no duplication of notification code unless an object adds a new property that must change. For example, BasicMutableShape adds a settable width and height, so changing width and height notify a change, but the code to notify for its change in X and Y come from its superclasses. (Note: The interfaces all extend from PropertyListenerRegister as well so that all the objects stored as shape types have access to the methods of PropertyListenerRegisterer without casting.)
+
+(5) You have a list that stores all of your observers - PropertyListenerSupport interface and APropertyListenerSupport class store the list of observers. 
+
+(10) Each setter of your atomic shape classes notifies all of your observers - all atomic shapes notify all observers when a property is changed. As mentioned, this is done with inheritance, and only the necessary properties are changed. 
+
+Observing Console Scene "View" (35 pts)
+
+(5) Create a class for observing console scene "view", and tag as "ConsoleSceneView" - Class is called BasicConsole and it is tagged as ConsoleSceneView
+
+(15) Console Scene "View" implements java.beans.PropertyChangeListener interface. Uses println() to display on the Console each PropertyChangeEvent it receives from the atomic objects being observed. - BasicConsole implements PropertyChangeListener and prints the events Source, the property, old value, and new value. 
+
+(15) Console Scene "View" has a constructor that takes an instance of the scene and registers itself as an observer for each atomic shape in the scene - It takes a BridgeScene as an argument and registers itself as an observer of all the atomic shapes in the scene. 
+
+Animating Demoing Main Class (30 pts)
+
+(10) Instantiates a scene object, display it using ObjectEditor, "Display" it using your console scene view - Scene is displayed in object editor as well as in my own BasicConsole class, which prints the changes to the console.
+
+(10) Moves an avatar in ObjectEditor and prints event data to console - avatars are moved and data is printed to console. 
+
+(5) Rotates all of an avatar's rotatable parts in ObjectEditor and prints event data to console - An avatars arms and legs are rotated and the event data is printed to the console. 
+
+(5) Changes an avatar's text in ObjectEditor and prints event data to console - an avatars text is changed and is also printed to the console. 
+
+Penalty
+
+(-5) Not uploading the project in a zipped folder with bin and src folders - file is zipped properly. 
+
+(-5) Not having a main package having a main class called Assignment8 - class called Assignment8 is in the main package. 
+
+(-5) Any public method is not in the interface - all public methods are in an interface. 
+
+(-5) Use the System.exit() - not used
+
+(-5) Main method not public - main method is public. 
+
+(-10) Call the OEFrame refresh method - OEFrame refresh is not called. 

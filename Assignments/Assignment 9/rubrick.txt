@@ -1,0 +1,51 @@
+Assignment 9
+
+Inheriting Bridge-Scene Painter (Regular Credit: 55 pts) - Did option 2 (Observing Bridge Scene)
+
+(5) Creat a view class, tagged as 'InheritingBridgeScenePainter'
+
+(5) The view class extends (directly or indirectly) Component
+
+(10) The view class registers as a listener of all model objects it paints
+
+(20) The view class overrides paint() to paint all graphical objects in the scene
+
+(5) paint() is called when a Property Change Event is fired
+
+(5) A constructor that takes the BridgeScene as an argument and registers itself as a listener of the atomic shapes in the scene
+
+(5) Ignore the OE annotations in the models it displays, but render each of the required properties of a shape correctly.
+
+Observing Bridge-Scene Painter (Extra Credit: 20 pts) - Did this.
+
+(5) Create an interface, tagged as 'PaintListener', including a method: void paint (Graphics2D g) - PaintListener is an interface that contains void paint(Graphics2D g).
+
+(5) Create a subclass of Component, tagged as 'ObservableBridgeScenePainter', and providing a method 'addPaintListener'to register instances of this interface - ObservablePainter and AObservablePainter class have an add paint listener and paint listeners can register themselves to it. 
+
+(10) Whenever the Java paint(Graphics) method is called(by repaint) in this subclass, it calls the paint method. - Whenever paint is called by java, repaint is called in the list of all observers. 
+
+Bridge Scene Controller(35 pts)
+
+(5) Define a controller class, tag it as 'BridgeSceneController' - class is tagged BridgeSceneController
+
+(5) A constructor that takes BridgeScene as argument - constructer takes BridgeScene as an argument
+
+(5) Listens to the mouse and key events of the window - It listens to mouse and keyboard events
+
+(10)If the user types 'a', 'g', 'l', or 'r' in the window, then Arthur, Galahad, Lancelot, or Robin should move to the last click point - has all of this functionality.
+
+(10)If the user types the letter 'o', then all avatars should return to their original positions - o puts avatars back to their original position. 
+
+Animating Demo Class(10 pts)
+
+(10) Demo both the scene using both the painting scene view and ObjectEditor - Demos the scene using object editor and my own scene view. 
+
+More Extra Credit (25 pts)
+
+(5) Implement a user interface to manipulate the command interpreter. Tag it as 'CommandInterpreterController' - CommandController manipulates the interpreter. 
+
+(5) Command-interpreter view to display the read-only error property. Tag it as 'ObservableCommandInterpreter' - The view shows the read only properties of command interpreter. 
+
+(5) Add to your command interpreter controller at least two 'action components'. - There are four buttons and two menu items in the controller that perform actions when pushed. 
+
+(10) Animate Progress Bars/Sliders, tag the class as 'ProgressBarCreator', define readonly property called 'ProgressBar' or 'Slider' - Progress Bar updates and shows the progress of the main class demo. 

@@ -1,0 +1,37 @@
+Scanner Bean (25 points)
+
+(20 points) Correct output. Program returns the correct output for a given input string, formatted as described in the assignment. - Program return the created instance of that object and prints all of its getters as well.
+
+(5 points) Scanner follows bean format - It is in the bean format.
+
+Token Classes (40 points)
+
+(15 points) Your program uses a separate class for every kind of token – number, word, quoted string, start, and end. - There is a separate class for every type of token.
+
+(15 points) All token classes follow the bean format. - They all follow the bean format.
+
+(10 points) All token classes have the required properties. - All token classes have the appropriate properties outlined in the assignment. 
+
+Interfaces (35 points)
+
+(15 points) Use of interfaces. Every public method is included in an interface (both for the tokens and the scanner) and the classes implement the appropriate interfaces. All public methods are placed in an interface and no class does not implement the proper interface. 
+
+(10 points) Create a token interface that is implemented by all token classes. Classes that have additional public methods may either implement multiple interfaces or extend this interface (if you know inheritance). - The interface StoreToken is implemented by all of the classes of different token types. Additional interfaces are designed for word and number in order to handle the additional functionality of the Word and Number token types. 
+
+(10 points) Objects are assigned to interface-type variables only. - All objects are assigned to interface variables. 
+
+Extra Credit (15 points)
+
+(10 points) Make classes for the plus and minus tokens and allow the scanner to check for sign tokens. - Plus and Minus tokens are defined as their own class. 
+
+(5 points) Especially nice code. - Tried to be as modular as possible. 
+
+Penalty
+
+(-10 points) Not having a "main" package having a main class called "Assignment3". - Assignment3 is in the main package.
+
+(-3 points each) Not having the tags “Number”, “Word”, “Quote”, “Plus”, “Minus”, “Start”, “End” for number/word/quoted string/plus (extra credit)/ minus(extra credit), start token, end token , respectively. - all the classes are tagged and check style can find them all. 
+
+(-20 points) Not uploading the project in a zipped folder with bin and src folders. - file is properly zipped. 
+
+(-10 points) Each class is not in its own file. - All classes are their own file.

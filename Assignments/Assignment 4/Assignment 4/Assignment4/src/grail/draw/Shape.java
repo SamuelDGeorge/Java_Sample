@@ -1,0 +1,10 @@
+package grail.draw;
+
+public interface Shape {
+	public int getX();
+	public void setX(int x);
+	public int getY();
+	public void setY(int y);
+	public int getHeight();
+	public int getWidth();
+}

@@ -1,0 +1,42 @@
+Angle/V Shape Class (20 pts)
+
+(15)Implement the 'V shape' or 'angle shape' composite shape class - There is an angle class that is composite shape composed of two Rotating Lines with a set origin. My class is called BasicAngleShape 
+
+(5) Taggled 'Angle' for this class - It is properly tagged as Angle.
+
+Avatars (45 pts)
+
+(20) Avatars are composed of 5 atomic shapes as specified - it is composed of Head, Body, Arms, Legs and a StringShape that goes on the screen. 
+
+(5) Taggled 'Avatar' for this class - Class called Basic Avatar is tagged “Avatar”
+
+(5) Tagged 'move' method that moves your avatar all at once (doesn't split) - The move method calls the same method as the constructor where it connects the avatar (method called connectAvatar()) that is private and connects the avatar at a specified location. Moving it just sets a new location for the avatar.  
+
+(15) Single 'connect' method that connects your avatar at joints explictly or connect all parts implicitly - there is a single connectAvatar() private method that connects all parts. The x, y position is the top left corner of the Avatars head. 
+
+Bridge Scene (15 pts)
+
+(5) Tagged as 'BridgeScene' - The class is called BasicBridgeScene and is Tagged as “BridgeScene”
+
+(10) Contains all 5 avatars - Has all five avatars with proper names.
+
+Demo (20 pts)
+
+(10) Display avatars in the ObjectEditor Window - Avatars are all displayed.
+
+(10) Move avatars - Avatar is moved. 
+
+Extra Credit (15 pts)
+
+(8) scalable avatars - Avatar is scalable using the scale() method that takes a double as it’s value to scale. 
+
+(7) rotate at least one arm for one avatar - Lancelots arm waves. 
+Penalty
+
+(-20) Not uploading the project in a zipped folder with bin and src folders - zipped properly
+
+(-10) Not having a main package having a main class called Assignment1 - Assignment5 is in the main package.
+
+(-10) Getter and setter for created objects - no getter or setter for created objects
+
+(-10) Any public method of an instantiated class not in some interface implemented by that class - all classes are implemented using interface-type variables. All public methods are in that interface. 
